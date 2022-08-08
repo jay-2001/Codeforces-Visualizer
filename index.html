@@ -1,0 +1,54 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link  rel="stylesheet" href="style.css" type="text/css">
+    <link  rel="stylesheet" href="search.css" type="text/css">
+    <link  rel="stylesheet" href="navbar.css" type="text/css">
+    <link  rel="stylesheet" href="profile.css" type="text/css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.5.1/chart.min.js" ></script>
+    <title>CF helper</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="navbar">
+        <h1 class="title">Codeforces Visualizer</h1>
+        <ul class="nav-pane">
+            <li class="nav-list active"><a href="index.html" class="nav-links">home</a></li>
+            <li class="nav-list"><a href="#" class="nav-links">Compare</a></li>
+            <li class="nav-list"><button class="btn bttn"><a href="#" class="nav-links">source</a></button></li>
+        </ul>
+    </div>
+    <div class = "search">
+        <input id='search-btn' type='checkbox'/>
+    <label for='search-btn'>Show search bar</label>
+    <input id='search-bar' type='text' placeholder='Handle' />
+    <div id="error"></div>
+    </div>
+    <div class="main">
+    <div class="content">
+        <div class="box1">
+            <div class="box11" id="box11"></div>
+            <div class="box12" id="box12"></div>
+        </div>
+        <div class="box2">
+            <div class="nav-graph" id="nav-graph">
+                <div class="nav-graph-item active" id="verdict" onclick="getVerdict();">Verdicts</div>
+                <div class="nav-graph-item" id="lan" onclick="getlan();">Languages Used</div>
+                <div class="nav-graph-item" id="tag" onclick="getTags()">Tags</div>
+                <div class="nav-graph-item" id="level" onclick="getlevel();">Levels</div>
+                <div class="nav-graph-item" id="rating" onclick="getRating()">Problem-Rating</div>
+            </div>
+            <div class="graph" id="graph"><div class="chart"><canvas height="500px" width="700px" id="chart"></canvas></div></div>
+        </div>
+    </div>
+</div>
+        
+        <script src="script.js"></script>
+</body>
+</html>

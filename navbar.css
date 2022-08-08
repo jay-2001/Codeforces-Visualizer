@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald');
+.navbar
+{
+    display:grid;
+    font-family: Oswald;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+    background: #00000088;
+    width:100%;
+    min-height:8vh;
+    opacity:0.7;
+    position:fixed;
+    -webkit-box-shadow: 0 8px 6px -6px #000;
+    -moz-box-shadow: 0 8px 6px -6px #000;
+    box-shadow: 0 8px 6px -6px #000;
+
+}
+.title
+{
+    font-family: Oswald;
+    display:flex;
+    margin-left:30px;
+    font-size:150%;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 600;
+
+}
+.nav-pane{
+    display: grid;
+    margin-left:200px;
+    grid-template-columns: repeat(3,auto);
+   align-content: center;
+    list-style: none;
+    text-align: center;
+    width: 60%;
+}
+.nav-list{
+    font-family: Oswald;
+    width:134px;
+    height:65px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:center;
+    font-size:150%;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.nav-links{
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 600;
+    color:inherit;
+}
+.nav-list.active{
+    color:#FF1EAD;
+}
+.nav-list:hover{
+    opacity: 1;
+    padding-top:3px;
+    text-decoration-line: underline ;
+    text-decoration-color: #FF1EAD ;
+  text-decoration-thickness: 4px ;
+    transition: 0.5s transform ease in;
+    transform: translateX(0);
+}
+.title:hover
+{
+    padding-top:3px;
+    color: #FF1EAD;
+}
+.bttn{
+    padding:0 10px;
+    border-radius:20px;
+    border:0;
+    
+
+}
+.bttn:hover{
+    background:white;
+    
+    
+
+}
